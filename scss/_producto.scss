@@ -1,0 +1,34 @@
+.producto {
+      
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows:repeat(3, 20%);
+    gap: 40px;
+    margin:30px 20px;
+    align-content:center;
+    
+    div{
+        img{
+
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            
+        }
+    }
+}
+
+
+@media screen and (min-width: 600px) {
+    .producto {
+
+               grid-template-columns:repeat(2,1fr);
+               grid-template-rows:repeat(2, 40%) ;
+               
+               
+    
+            }
+    
+            
+ }
+
